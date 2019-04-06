@@ -1,6 +1,6 @@
-##ReactJS and Socket.io Boilerplate
+## ReactJS and Socket.io Boilerplate
 
-###Getting Started
+### Getting Started
 
 First you'll need to fork or download the respository.
 
