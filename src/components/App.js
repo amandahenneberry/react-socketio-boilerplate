@@ -4,9 +4,9 @@ import { useState } from "react";
 import Chat from "./Chat.js";
 import React from 'react';
 
-const socket = io.connect("http://localhost:3001");
+const socket = io.connect(`http://${window.location.hostname}:3000`);
 
-function App() {
+export function App() {
   const [username, setUsername] = useState("");
   const [room, setRoom] = useState("");
   const [showChat, setShowChat] = useState(false);
@@ -25,7 +25,7 @@ function App() {
           <h3>Join A Chat</h3>
           <input
             type="text"
-            placeholder="John..."
+            placeholder="Enter Cool nickname......"
             onChange={(event) => {
               setUsername(event.target.value);
             }}
