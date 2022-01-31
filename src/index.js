@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HelloMessage from './components/HelloMessage';
-import registerServiceWorker from './registerServiceWorker';
+import App from './components/App.js';
+import registerServiceWorker from "./registerServiceWorker";
 
-ReactDOM.render(<HelloMessage/>, document.getElementById('root'));
-
-registerServiceWorker();
+ReactDOM.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    document.getElementById("root")
+  );
+  
+  registerServiceWorker ();

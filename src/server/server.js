@@ -1,12 +1,24 @@
-var app = require('http').createServer()
-var io = module.exports.io = require('socket.io')(app)
+// const app = require('http').createServer()
+// const http = require("http");
+// const cors = require("cors");
+// const { Server } = require("socket.io");
+// const SocketManager = require('./SocketManager')
 
-const PORT = process.env.PORT || 3000
+// app.use(cors());
 
-const SocketManager = require('./SocketManager')
+// const server = http.createServer(app);
 
-io.on('connection', SocketManager)
 
-app.listen(PORT, ()=>{
-	console.log("Connected to port" + PORT);
-})
+// const io = module.exports.io = new Server(server, {
+// 	cors: {
+// 		origin: "http://localhost:3000",
+// 		methods: ["GET", "POST"],
+// 	},
+//   });
+
+
+// io.on('connection', SocketManager)
+
+// server.listen(3001, () => {
+// 	console.log("SERVER RUNNING");
+//   });
